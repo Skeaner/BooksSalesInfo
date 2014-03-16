@@ -22,3 +22,25 @@ bin/classes/one/skean/booksalesinfo/R$array.class
 bin/BooksSalesInfo.apk
 
 bin/classes/one/skean/booksalesinfo/R$attr.class
+
+*.class
+
+*.jar
+
+*.cache
+
+bin/res/crunch/drawable-hdpi/icon.png
+
+bin/res/crunch/drawable/btnpic_flat_blue.png
+
+bin/res/crunch/drawable/btnpic_flat_green.png
+
+bin/res/crunch/drawable/btnpic_flat_red.png
+
+bin/res/crunch/drawable/btnpic_selected.png
+
+bin/resources.ap_
+
+gen/one/skean/booksalesinfo/BuildConfig.java
+
+gen/one/skean/booksalesinfo/R.java
