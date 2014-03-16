@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+    <ScrollView
+        android:id="@+id/scv_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/welcome_red"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_main" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="今日销售量(本)"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/txv_todaynum"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textSize="64sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_main" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="今日销售额(元)"
+                    android:textColor="@color/welcome_red"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/txv_toadymoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="0.00"
+                    android:textColor="@color/welcome_red"
+                    android:textSize="42sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_main"
+                android:paddingTop="@dimen/margin_main" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="图书销售TOP5"
+                    android:textSize="@dimen/text_size_micro" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="学校销售TOP5"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_main" >
+                <ListView
+                    android:id="@+id/lsv_book_ranking"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_main"
+                    android:layout_weight="1"                    android:headerDividersEnabled="true" >
+                </ListView>
+                <ListView
+                    android:id="@+id/lsv_school_ranking"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_main"
+                    android:layout_weight="1"
+                    android:headerDividersEnabled="true" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="top" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bfff"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn_month_statictis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btnselector_flat_blue"
+                android:text="本月统计"
+                android:textColor="@color/holo_blue" />
+            <Button
+                android:id="@+id/btn_query"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btnselector_flat_blue"
+                android:text="汇总统计"
+                android:textColor="@color/holo_blue" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

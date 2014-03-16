@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="statictis_kinds">
+        <item>按日期统计</item>
+        <item>按学校统计</item>
+        <item>按图书名称统计</item>
+        <item>按出版社统计</item>
+    </string-array>
+</resources>

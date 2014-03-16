@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_main" >
+    <TextView
+        android:id="@+id/lsvitem_queryresult_titlepart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_small" />
+    <TextView
+        android:id="@+id/lsvitem_queryresult_numpart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:ellipsize="marquee"
+        android:paddingLeft="@dimen/listviewitem_padding"
+        android:singleLine="true"
+        android:textColor="@color/holo_purple"
+        android:textSize="@dimen/text_size_small" />
+    <TextView
+        android:id="@+id/lsvitem_queryresult_moneyspart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:ellipsize="marquee"
+        android:paddingLeft="@dimen/listviewitem_padding"
+        android:singleLine="true"
+        android:textColor="@color/holo_green"
+        android:textSize="@dimen/text_size_small" />
+</LinearLayout>

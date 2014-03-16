@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="one.skean.booksalesinfo"
+    android:versionCode="1"
+    android:versionName="1.1" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="书香校园小助手"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="one.skean.booksalesinfo.ui.LoginActivity"
+            android:label="书香校园小助手"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="one.skean.booksalesinfo.ui.WelcomeActivity"
+            android:label="欢迎"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="one.skean.booksalesinfo.ui.MonthActivity"
+            android:label="本月统计" >
+        </activity>
+        <activity
+            android:name="one.skean.booksalesinfo.ui.QueryActivity"
+            android:label="汇总统计"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="one.skean.booksalesinfo.ui.DetailActivity"
+            android:label="销售详细"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="one.skean.booksalesinfo.ui.SkeanActiivty" >
+        </activity>
+    </application>
+</manifest>

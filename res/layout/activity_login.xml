@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic_blur"
+    android:padding="@dimen/margin_main"
+    tools:context=".LoginActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/frameshape_gray"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_main" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/txv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="帐号:"
+                android:textSize="@dimen/text_size_medium" />
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/txv_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="密码:"
+                android:textSize="@dimen/text_size_medium" />
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/ckb_remember_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="记住账号密码"
+            android:textSize="@dimen/text_size_small" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/button_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginRight="@dimen/margin_main"
+                android:layout_weight="1"
+                android:background="@drawable/btnselector_login"
+                android:text="登陆" />
+            <Button
+                android:id="@+id/btn_quit"
+                style="@style/button_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/btnseletor_quit"
+                android:text="退出" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ffff"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/txv_title_in_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="@color/welcome_red"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/txv_subtitle_in_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="副标题" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lsv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:footerDividersEnabled="false" >
+        </ListView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frl_button_group"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bfff" >
+            <Button
+                android:id="@+id/btn_prev_page"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btnselector_flat_blue"
+                android:text="上一页"
+                android:textColor="@color/holo_blue" />
+            <Button
+                android:id="@+id/btn_next_page"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btnselector_flat_blue"
+                android:text="下一页"
+                android:textColor="@color/holo_blue" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

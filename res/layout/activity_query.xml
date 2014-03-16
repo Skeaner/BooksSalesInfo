@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_main"
+        android:paddingTop="@dimen/margin_main" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择统计的方式:"
+            android:textSize="@dimen/text_size_medium" />
+        <Spinner
+            android:id="@+id/spn_statictis_kinds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/statictis_kinds"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_main" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择开始日期:"
+            android:textSize="@dimen/text_size_medium" />
+        <EditText
+            android:id="@+id/edt_startday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_main" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择结束日期:"
+            android:textSize="@dimen/text_size_medium" />
+        <EditText
+            android:id="@+id/edt_endday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/part_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_main"
+        android:visibility="gone" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择地区:"
+            android:textSize="@dimen/text_size_medium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <Spinner
+                android:id="@+id/spn_province"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+            <Spinner
+                android:id="@+id/spn_city"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+            <Spinner
+                android:id="@+id/spn_county"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/part_bookname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_main"
+        android:visibility="gone" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="输入书名:"
+            android:textSize="@dimen/text_size_medium" />
+        <EditText
+            android:id="@+id/edt_bookname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/part_press"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_main"
+        android:visibility="gone" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="输入出版社:"
+            android:textSize="@dimen/text_size_medium" />
+        <EditText
+            android:id="@+id/edt_press"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_main" >
+        <RadioGroup
+            android:id="@+id/rgp_orderby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:checkedButton="@+id/rbn_orderby_money"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@id/rbn_orderby_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="金额排序" />
+            <RadioButton
+                android:id="@+id/rbn_orderby_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="数量排序" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/button_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/listviewitem_padding"
+            android:layout_weight="1"
+            android:background="@drawable/btnselector_query"
+            android:text="查询" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lsv_query_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>
