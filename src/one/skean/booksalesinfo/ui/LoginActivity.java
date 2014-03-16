@@ -105,12 +105,14 @@ public class LoginActivity extends NetActivity implements OnClickListener, OnChe
 		}.start();
 	}
 
+	/* 记住密码的checkbok的监听器方法 */
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 		Editor editor = preferences.edit();
 		editor.putBoolean(KEY_REMEMBER, isChecked);
 		editor.commit();
 	}
 
+	/* 初始化记住密码的checkbok的状态 */
 	private void initStatus() {
 		if (preferences.getBoolean(KEY_REMEMBER, false)) {
 			ckbRememberPW.setChecked(true);
@@ -119,6 +121,7 @@ public class LoginActivity extends NetActivity implements OnClickListener, OnChe
 		}
 	}
 
+	/* 初始化progressdialog */
 	private void initProgressDialog() {
 		progressDialog = new ProgressDialog(this, R.style.custom_progress);
 		progressDialog.setCancelable(false);
